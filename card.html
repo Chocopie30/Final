@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Invitation card</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+		*{box-sizing: border-box;}
+
+		[class*="col-"]
+		{
+        width: 100%; 
+    	text-align: center;
+		padding: 15px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		float: left;
+	}
+
+        @media only screen and (min-width: 450px)
+	{
+    .col-1 {width: 8.33%;}
+    .col-1r {width: 8.33%; margin-right: 100px;}
+    .col-1l {width: 8.33%; margin-left:200px;}
+    .col-1rl {width: 8.33%; margin-right:100px; margin-left: 200px;}
+    .col-2 {width: 16.66%;}
+    .col-2r {width: 16.66%;margin-right: 100px;}
+    .col-2l {width: 16.66%;margin-left:200px;}
+    .col-2rl {width: 16.66%; margin-right: 100px; margin-left: 200px;}
+    .col-3 {width: 25%;}
+    .col-3r {width: 25%;margin-right: 100px;}
+    .col-3l {width: 25%;margin-left: 200px;}
+    .col-3rl {width: 25%; margin-right: 100px; margin-left: 200px;}
+    .col-4 {width: 33.33%;}
+    .col-4r {width: 33.33%;margin-right: 100px;}
+    .col-4l {width: 33.33%;margin-left: 200px;}
+    .col-4rl {width: 33.33%; margin-right: 100px; margin-left:200px;}
+    .col-5 {width: 41.66%;}
+    .col-5r {width: 41.66%;margin-right: 100px;}
+    .col-5l {width: 41.66%;margin-left: 200px;}
+    .col-5rl {width: 41.66%; margin-right: 100px; margin-left: 200px;}
+    .col-6 {width: 50%;}
+    .col-6r {width: 50%;margin-right: 100px;}
+    .col-6l {width: 50%;margin-left: 200px;}
+    .col-6rl {width: 50%; margin-right: 100px; margin-left: 200px;}
+    .col-7 {width: 58.33%;}
+    .col-7r {width: 58.33%;margin-right: 100px;}
+    .col-7l {width: 58.33%;margin-left: 200px;}
+    .col-7rl {width: 58.33%; margin-right: 100px; margin-left: 200px;}
+    .col-8 {width: 66.66%;}
+    .col-8r {width: 66.66%;margin-right: 100px;}
+    .col-8l {width: 66.66%;margin-left: 200px;}
+    .col-8rl {width: 66.66%; margin-right: 100px; margin-left: 200px;}
+    .col-9 {width: 75%;}
+    .col-9r {width: 75%;margin-right: 100px;}
+    .col-9l {width: 75%;margin-left: 200px;}
+    .col-9rl {width: 75%; margin-right: 100px; margin-left: 200px;}
+    .col-10 {width: 83.33%;}
+    .col-10r {width: 83.33%;margin-right: 100px;}
+    .col-10l {width: 83.33%;margin-left: 200px;}
+    .col-10rl {width: 83.33%; margin-right:100px; margin-left: 200px;}
+    .col-11 {width: 91.66%;}
+    .col-11r {width: 91.66%;margin-right: 100px;}
+    .col-11l {width: 91.66%;margin-left: 200px;}
+    .col-11rl {width: 91.66%; margin-right: 100px; margin-left: 200px;}
+    .col-12 {width: 100%;}
+    .col-12r {width: 100%;margin-right: 100px;}
+    .col-12l {width: 100%;margin-left: 200px;}
+    .col-12rl {width: 100%; margin-right:100px; margin-left: 200px;}
+	}
+	
+	.row::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+
+    pre
+    {
+        max-width: 100%;
+    max-height: auto;
+    min-width: auto;
+    min-height: 280px;
+        font-family: "Sans-serif";
+        line-height: 1.5;
+    }
+     img {
+    max-width: 100%;
+    max-height: 294px;
+    min-width: auto;
+    min-height: 294px;
+    }
+	</style>
+</head>
+<body style="color: rgb(50, 50, 50);">
+    <script>
+        function change()
+        {
+            document.getElementById("para1").innerHTML="(I'll believe you will bring my birthday present :D)"
+        }
+        function yo() {
+            document.getElementById("img1").src="dog.png"
+        }
+    </script>
+	<div class="row">
+		<p class="col-12"></p>
+		<p class="col-12"></p>
+	</div>
+	<div class="row">
+		<h2 class="col-6rl" style="background-color:rgb(190, 200, 220); font-size: 35px;">A Birthday Invitation</h2>
+	</div>
+	<div class="row">
+		<p class="col-6rl" style="background-color: rgb(190, 200, 220);"> <strong>I invite you to my birthday party!</strong></p>
+	</div>
+	<div class="row">
+		<img src="cake.png" onclick="yo()" id="img1" class="col-3l" style="background-color: rgb(190, 200, 220);">
+		<pre class="col-3" style="background-color: rgb(190, 200, 220);"><strong>
+
+
+<i class="fa fa-calendar"></i> Date : 2019.05.30
+
+<i class="fa fa-clock-o"></i> Time : 6 p.m.
+
+<i class="fa fa-home"></i> Place : My house in
+Yeongcheon,
+Kyungsangbuk-do
+
+</strong></pre>
+	</div>
+    <div class="row">
+        <pre class="col-6rl" style="background-color: rgb(190, 200, 220);">
+
+
+Hello friends!
+Do you all know it is my birthday on May 30th?
+You do not have to bring my birthday present
+when I come to a birthday party!
+<span><p id="para1"></p></span><button onclick="change()">(Press it)</button></pre>
+    </div>
+
+</body>
+</html>
